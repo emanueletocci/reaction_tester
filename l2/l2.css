@@ -1,14 +1,9 @@
-
-body{
-    background-color: #1e1e2e;
-    font-family: Lato, Arial, sans-serif;
-    text-align: center;
-    color: #cdd6f4;
-    text-align: center;
+.container {
+    background-color: #181825;
+    border-radius: 20px;
+    width: 80%;
+    margin: 15px auto;
 }
-
-h1 { color: #cba6f7;}
-strong { color: #cba6f7;}
 
 button {
     background-color: #cba6f7;
@@ -46,3 +41,7 @@ button:hover {
 }
 
 #stop_button{display: none;}
+
+.level-button{
+    background-color:  #74c7ec;
+}

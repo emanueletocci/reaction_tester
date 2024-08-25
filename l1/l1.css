@@ -1,0 +1,35 @@
+.container {
+    background-color: #181825;
+    border-radius: 20px;
+    width: 80%;
+    height: 60vh;
+    margin: 50px auto;
+    border: 3px solid #cba6f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+button {
+    background-color: #cba6f7;
+    color: #1e1e2e;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #e5c890;
+    transform: scale(1.2);
+}
+
+#stop_button{display: none;}
+
+.level-button{
+    background-color:  #74c7ec;
+}

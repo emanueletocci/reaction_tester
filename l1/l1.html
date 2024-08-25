@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Reaction test</title>
-    <link rel="stylesheet" type="text/css" href="reaction_tester.css">  
-    <script src="reaction_tester.js"></script> 
+    <link rel="stylesheet" type="text/css" href="l1.css">  
+    <link rel="stylesheet" href="/base.css">
+    <script src="l1.js"></script> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +15,10 @@
 </head>
 <body>
     <h1>Test your reaction!</h1>
-    <p>Click on the figure as quickly as you can!</p>
-    <p>Click on <strong id="start-text">start</strong> to begin:</p>
-    <button type="button" id="start_button">START</button>
-    <button type="button" id="stop_button">STOP</button>
-    <p>Your time: <strong id="time"> 0 </strong> Your score: <strong id="score"> 0 </strong></p>
-    <div id="shape_box">    
-        <div id="shape"></div>
+    <h2>Static test</h2>
+    <p>Your time: <strong id="time"> 0 </strong></p>
+    <div class="container">  
+        <h3 id="ready-text">Click when you are ready</h3>
     </div>
 </body>
 </html>

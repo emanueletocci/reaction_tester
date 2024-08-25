@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+body{
+    background-color: #1e1e2e;
+    font-family: Lato, Arial, sans-serif;
+    text-align: center;
+    color: #cdd6f4;
+    text-align: center;
+}
+
+h1 {    
+    color: #cba6f7;
+    margin-top: 20px;
+}
+strong { color: #cba6f7;}
+
+p { 
+    color: #cdd6f4;
+    font-size: 1.1rem;
+}
