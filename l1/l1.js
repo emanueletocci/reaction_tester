@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function(){
     const container = document.querySelector('.container');
     const ready_text = document.getElementById('ready_text');
     const time = document.getElementById('time');
-    const average = document.getElementById('average');
     let start_time;
     let counter = 0;
     let clickable = false;
+    let average = 0;
     results = [];
     container.addEventListener('click', clicked);
 
@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function(){
             intId = setTimeout(changeColor, minMaxGen(300,3000));
         } else if(clickable){ 
             let user_time = timeCalc(start_time);
-            time.innerHTML = user_time.toFixed(3) + "s";
-            results.push(user_time);
+            time.innerHTML = user_time.toFixed(3);
             counter++;     
+            results.push(user_time);
             attemptColor();
             clear();
         }
@@ -41,6 +41,10 @@ document.addEventListener('DOMContentLoaded', function(){
     
     function minMaxGen(min,max){
         return min + Math.random() * (max - min);
+    }
+
+    function average(previus, current){
+        return (previus + current)/counter;
     }
 
     function clear(){
