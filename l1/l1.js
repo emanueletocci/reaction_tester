@@ -3,13 +3,18 @@ document.addEventListener('DOMContentLoaded', function(){
     const container = document.querySelector('.container');
     const ready_text = document.getElementById('ready_text');
     const time = document.getElementById('time');
+    const circles = document.querySelectorAll('.circle');
+    const reset = document.getElementById('reset');
     let start_time;
-    let counter = 0;
-    let clickable = false;
-    let average = 0;
-    results = [];
+    let counter;
+    let clickable;
+    let average;
+    let sum;
+    let results = [];
+    reset_func();
+    
     container.addEventListener('click', clicked);
-
+    reset.addEventListener('click', reset_func);
     function clicked(){
         if(ready_text.innerHTML === "Click when you are ready"){
             ready_text.innerHTML = "Click when is green";
@@ -17,21 +22,23 @@ document.addEventListener('DOMContentLoaded', function(){
                 clearTimeout(intId);
             }
             intId = setTimeout(changeColor, minMaxGen(300,3000));
-        } else if(clickable){ 
+        } if(clickable){ 
             let user_time = timeCalc(start_time);
             time.innerHTML = user_time.toFixed(3);
-            counter++;     
             results.push(user_time);
+            sum = sum + user_time;
             attemptColor();
             clear();
         }
     }
 
     function changeColor(){
-        start_time = Date.now();
         container.style.backgroundColor = "#a6d189";
         ready_text.style.color = "#181825";
+        ready_text.innerHTML = "Click!";
+        counter++;     
         clickable = true;
+        start_time = Date.now();
     }
 
     function timeCalc(t1,t2){
@@ -43,10 +50,6 @@ document.addEventListener('DOMContentLoaded', function(){
         return min + Math.random() * (max - min);
     }
 
-    function average(previus, current){
-        return (previus + current)/counter;
-    }
-
     function clear(){
         container.style.backgroundColor = "#181825";
         ready_text.style.color = "#cdd6f4";
@@ -55,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     function attemptColor(){
-        let circles = document.querySelectorAll('.circle');
         switch (counter) {
             case 1:
                 circles[0].style.backgroundColor = "#a6d189";
@@ -72,9 +74,17 @@ document.addEventListener('DOMContentLoaded', function(){
             case 5: 
                 circles[4].style.backgroundColor = "#a6d189";
                 break;
-            default:
-                alert("Error");
-                break;
+            }
+    }
+
+    function reset_func(){
+        counter = 0;
+        clickable = false;
+        average = 0;
+        time.innerHTML="0"
+        sum = 0;
+        for (let i=0; i<5; i++){
+            circles[i].style.backgroundColor = "#181825";    
         }
     }
 });

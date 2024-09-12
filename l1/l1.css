@@ -28,14 +28,12 @@ h3 {
         color: #cba6f7;
         animation: colorFadeIn 0.5s;
         h3{
-            -moz-transform: scale(1.05);
             -webkit-transform: scale(1.05);
             -o-transform: scale(1.05);
             -ms-transform: scale(1.05);
             -webkit-transform: scale(1.05);
             transform: scale(1.05);
             -webkit-transition: transform 1.05s ease-in-out;
-            -moz-transition:transform 1.05s ease-in-out;
             -ms-transition:transform 1.05s ease-in-out;
         }
         
@@ -55,4 +53,9 @@ h3 {
     height: 15px;
     width: 15px;
     margin: 5px;
+}
+
+#reset {
+    font-size: 1.3em;
+    font-weight: bold;
 }

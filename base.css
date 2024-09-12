@@ -24,7 +24,6 @@
     isolation: isolate;
   }
 
-
 body{
     background-color: #1e1e2e;
     font-family: Lato, Arial, sans-serif;
@@ -42,4 +41,19 @@ strong { color: #cba6f7;}
 p { 
     color: #cdd6f4;
     font-size: 1.1rem;
+}
+
+button {
+  background-color: #cba6f7;
+  color: #1e1e2e;
+  padding: 10px 20px;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #e5c890;
+  transform: scale(1.2);
 }
