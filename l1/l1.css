@@ -26,17 +26,7 @@ h3 {
     align-items: center;
     &:hover{
         color: #cba6f7;
-        animation: colorFadeIn 0.5s;
-        h3{
-            -webkit-transform: scale(1.05);
-            -o-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-            -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-            -webkit-transition: transform 1.05s ease-in-out;
-            -ms-transition:transform 1.05s ease-in-out;
-        }
-        
+        animation: colorFadeIn 0.5s;        
     }
 }
 

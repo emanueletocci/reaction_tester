@@ -12,9 +12,10 @@ document.addEventListener('DOMContentLoaded', function(){
     let sum;
     let results = [];
     reset_func();
-    
     container.addEventListener('click', clicked);
     reset.addEventListener('click', reset_func);
+    
+    //Click the shape
     function clicked(){
         if(ready_text.innerHTML === "Click when you are ready"){
             ready_text.innerHTML = "Click when is green";
@@ -36,13 +37,12 @@ document.addEventListener('DOMContentLoaded', function(){
         container.style.backgroundColor = "#a6d189";
         ready_text.style.color = "#181825";
         ready_text.innerHTML = "Click!";
-        counter++;     
         clickable = true;
         start_time = Date.now();
     }
 
     function timeCalc(t1,t2){
-        t2 = t2 || Date.now();             
+        t2 = Date.now();             
         return (t2-t1)/1000;   
     }
     
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     function attemptColor(){
+        counter++;     
         switch (counter) {
             case 1:
                 circles[0].style.backgroundColor = "#a6d189";
@@ -73,11 +74,16 @@ document.addEventListener('DOMContentLoaded', function(){
                 break;
             case 5: 
                 circles[4].style.backgroundColor = "#a6d189";
+                setTimeout(showRes, 1)
                 break;
+            case 6:
+
             }
     }
 
     function reset_func(){
+        clearTimeout(intId);
+        ready_text.innerHTML = "Click when you are ready";
         counter = 0;
         clickable = false;
         average = 0;
@@ -86,5 +92,11 @@ document.addEventListener('DOMContentLoaded', function(){
         for (let i=0; i<5; i++){
             circles[i].style.backgroundColor = "#181825";    
         }
+    }
+
+    function showRes(){
+        average = (sum/counter).toFixed(3);
+        alert("Your average score: "+average);
+        reset_func();
     }
 });
