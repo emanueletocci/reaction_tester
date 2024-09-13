@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -33,14 +35,19 @@
 
 body{
     background-color: var(--bg);
-    font-family: Lato, Arial, sans-serif;
+    font-family: 'Anonymous Pro', sans-serif;
     text-align: center;
     color: var(--tp);
     text-align: center;
 }
 
+p { 
+  color: var(--tp);
+  font-size: 1.2rem;
+}
+
 h1 {    
-  font-size: 2em;;
+  font-size: 2em;
   color: var(--lilac);
   margin-top: 1%;
 }
@@ -64,10 +71,7 @@ a:hover {
 
 strong { color: var(--cyan);}
 
-p { 
-    color: var(--tp);
-    font-size: 1.1rem;
-}
+
 
 button {
   background-color: var(--lilac);

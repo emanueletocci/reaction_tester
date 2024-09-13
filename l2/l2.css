@@ -1,24 +1,4 @@
-.container {
-    background-color: #181825;
-    border-radius: 20px;
-    width: 80%;
-    margin: 15px auto;
-}
-
-button {
-    background-color: #cba6f7;
-    color: #1e1e2e;
-    padding: 10px 20px;
-    font-size: 1.3em;
-    font-weight: bold;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-button:hover {
-    background-color: #e5c890;
-    transform: scale(1.2);
-}
+@import url("/reaction_tester/base.css");
 
 #shape_box{
     padding: 50px 50px 50px 50px;
@@ -27,6 +7,14 @@ button:hover {
     height: 60vh;
     border-radius: 50px;
     
+}
+
+#back-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    left: 5px;
 }
 
 #shape{
@@ -41,7 +29,3 @@ button:hover {
 }
 
 #stop_button{display: none;}
-
-.level-button{
-    background-color:  #74c7ec;
-}
