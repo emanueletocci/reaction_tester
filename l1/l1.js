@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
             intId = setTimeout(changeColor, minMaxGen(300,3000));
         } if(clickable){ 
             let user_time = timeCalc(start_time);
-            time.innerHTML = user_time.toFixed(3);
+            time.innerHTML = user_time +"ms";
             results.push(user_time);
             sum = sum + user_time;
             attemptColor();
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function timeCalc(t1,t2){
         t2 = Date.now();             
-        return (t2-t1)/1000;   
+        return (t2-t1);   
     }
     
     function minMaxGen(min,max){
@@ -95,8 +95,8 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     function showRes(){
-        average = (sum/counter).toFixed(3);
-        alert("Your average score: "+average);
+        average = (sum/counter);
+        alert("Your average score: "+average+ "ms");
         reset_func();
     }
 });

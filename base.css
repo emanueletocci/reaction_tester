@@ -20,32 +20,58 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
-  #root, #__next {
-    isolation: isolate;
+
+  :root{
+    --green: #a6d189;
+    --yellow: #e5c890;
+    --cyan: #74c7ec;
+    --bg: #1e1e2e;
+    --lilac: #cba6f7;
+    --tp: #cdd6f4;
+    --ct : #181825;
   }
 
 body{
-    background-color: #1e1e2e;
+    background-color: var(--bg);
     font-family: Lato, Arial, sans-serif;
     text-align: center;
-    color: #cdd6f4;
+    color: var(--tp);
     text-align: center;
 }
 
 h1 {    
-    color: #cba6f7;
-    margin-top: 20px;
+  font-size: 2em;;
+  color: var(--lilac);
+  margin-top: 1%;
 }
-strong { color: #cba6f7;}
+h2 {    
+  font-size: 1.8em;
+  margin-top: 1%;
+}
+h3 {    
+  font-size: 1.3em;
+  margin-top: 1%;
+}
+
+a{
+  color: var(--cyan);
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+  box-shadow: inset 130px 0 0 0 var(--cyan);
+  color: var(--ct);
+}
+
+strong { color: var(--cyan);}
 
 p { 
-    color: #cdd6f4;
+    color: var(--tp);
     font-size: 1.1rem;
 }
 
 button {
-  background-color: #cba6f7;
-  color: #1e1e2e;
+  background-color: var(--lilac);
+  color: var(--bg);
   padding: 10px 20px;
   font-size: 1.3em;
   font-weight: bold;
@@ -54,6 +80,6 @@ button {
 }
 
 button:hover {
-  background-color: #e5c890;
+  background-color: var(--cyan);
   transform: scale(1.2);
 }

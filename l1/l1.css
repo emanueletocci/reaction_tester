@@ -1,9 +1,11 @@
+@import url("/reaction_tester/base.css");
+
 @keyframes colorFadeIn {
-    0% { color: #cdd6f4; }
-    100% { color: #cba6f7; }
+    0% { color: var(--tp); }
+    100% { color: var(--lilac); }
   }
 
-h3 {
+#ready_text {
     font-size: 2.5rem;
 }
 
@@ -16,7 +18,7 @@ h3 {
 }
 
 .container {
-    background-color: #181825;
+    background-color: var(--ct);
     border-radius: 20px;
     width: 80%;
     height: 70vh;
@@ -25,7 +27,7 @@ h3 {
     justify-content: center;
     align-items: center;
     &:hover{
-        color: #cba6f7;
+        color: var(--lilac);
         animation: colorFadeIn 0.5s;        
     }
 }
@@ -38,7 +40,7 @@ h3 {
 }
 
 .circle {
-    background-color: #181825;
+    background-color: var(--bg);
     border-radius: 50%;
     height: 15px;
     width: 15px;
