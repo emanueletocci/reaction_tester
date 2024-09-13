@@ -63,9 +63,10 @@ h3 {
 a{
   color: var(--cyan);
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  font-weight: bold;
 }
 a:hover {
-  box-shadow: inset 130px 0 0 0 var(--cyan);
+  box-shadow: inset 150px 0 0 0 var(--cyan);
   color: var(--ct);
 }
 
