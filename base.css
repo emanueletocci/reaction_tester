@@ -36,7 +36,6 @@
 body{
     background-color: var(--bg);
     font-family: 'Anonymous Pro', sans-serif;
-    text-align: center;
     color: var(--tp);
     text-align: center;
 }
