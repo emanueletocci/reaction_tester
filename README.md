@@ -1,2 +1,1 @@
-This is absolutely my first javascript project, a simple web tool to misure the human reaction time.
-... Updating
+This is a simple tool to measure the human reaction time... Updating
