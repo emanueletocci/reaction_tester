@@ -2,6 +2,15 @@
 #clock {
     font-size: 1.5rem;
 }
+
+h2, h3, h4{
+    text-align: center;
+}
+
+h3 {
+    padding-top: 30px;
+}
+
 .container {
     background-color: var(--ct);
     text-align: left;
@@ -13,12 +22,9 @@
     justify-content: center;
     flex-direction: column;
 }
-h2, h3, h4{
-    text-align: center;
-}
 
-h3 {
-    padding-top: 30px;
+li{
+    font-size: 1.15rem;
 }
 footer{
     position: relative;
