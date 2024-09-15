@@ -1,1 +1,1 @@
-This is a simple tool to measure the human reaction time... Updating
+This is a simple tool to measure the human reaction time. It's build only with html/css/javascript, cookie free (it is my first javascript project). Actually are avaible 2 kind of tests: static and dynamic (aim) test.
