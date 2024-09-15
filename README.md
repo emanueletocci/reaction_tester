@@ -4,3 +4,4 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 This is a simple tool to measure the **human reaction time**. It's build only with html/css/javascript, cookie free (this is my first javascript project). Actually are avaible 2 kind of tests: static and dynamic (aim) test. More info ![here](https://emanueletocci.github.io/reaction_tester/).
+The colors are based on ![catpuccin palette](https://catppuccin.com/palette).
