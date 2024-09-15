@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="author" content="Emanuele Tocci">
+    <meta name="description" content="A simple tool to measure the human reaction time">
+    <meta name="keywords" content="reaction time, response time, human response">
     <title>Reaction test</title>
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <h1>Test your reaction!</h1>
-    <div class="container" id="about-ct">
-        <h2>About</h2>
-        <p><a href="https://www.cognifit.com/science/response-time?srsltid=AfmBOoqw5GKgm8LTUEjLB9p0E0WXNzjE1Xf6q7e4NEinDBbiTorn5Vpl">Reaction time</a>, also known as <i>response time</i>, is the interval between perceiving a stimulus and initiating a response to it. The main factors influencing time are:</p>
-        <ul>
-            <li><strong>Perception: </strong> the time your sense take to perceive the external stimulus;</p></li>
-            <li><strong>Processing: </strong> the time your brain need to understand the stimulus;</li>
-            <li><strong>Response: </strong> the time your body need to generate a response to the brain request.</li>
-        </ul>
-        <p>This simple tool measures your reaction time. There are 2 different kind of tests: </p>
-        <h3>Static Test</h3>
-            <p>The goal of <strong>static test</strong> is to reduce the body response delay. You just have to click a box without moving the mouse.</p>
-        <h3>Dynamic (aim) Test</h3>
-            <p>The <strong>dynamic test</strong> measures also your visual-motor coordination. You have to click the shapes which appears in different positions on the page. This is the classic <strong>aim test/trainer</strong> used by videoplayer to improve their aim skills. Such like <a href="https://store.steampowered.com/app/714010/Aimlabs/">this</a>.</p>
+    <main>
+        <h1>Test your reaction!</h1>
+        <p id="clock"></p>
+        <section class="container" id="about-ct">
+            <h2>About</h2>
+            <p><a href="https://www.cognifit.com/science/response-time?srsltid=AfmBOoqw5GKgm8LTUEjLB9p0E0WXNzjE1Xf6q7e4NEinDBbiTorn5Vpl">Reaction time</a>, also known as <i>response time</i>, is the interval between perceiving a stimulus and initiating a response to it. The main factors influencing time are:</p>
+            <ul>
+                <li><strong>Perception: </strong> the time your sense take to perceive the external stimulus;</p></li>
+                <li><strong>Processing: </strong> the time your brain need to understand the stimulus;</li>
+                <li><strong>Response: </strong> the time your body need to generate a response to the brain request.</li>
+            </ul><hr>
+            <p>This simple tool measures your reaction time. There are 2 different kinds of test: </p>
+            <h3>Static Test</h3>
+                <p>The goal of <strong>static test</strong> is to reduce the body response delay. You just have to click a box without moving the mouse. You should use this test to understand how fast can you respond to a stimulus.</p>
+            <h3>Dynamic (aim) Test</h3>
+                <p>The <strong>dynamic test</strong> esteem also your visual-motor coordination. You have to click on the shapes that appear in different positions on the page. This is the classic <strong>aim test/trainer</strong> used by video-game player to improve their aiming skills. Something like <a href="https://store.steampowered.com/app/714010/Aimlabs/">this</a>.</p>
+                <p>You should use this test to improve your coordination and the reaction time to moving items.</p>
+        </section>
+        <p>Choose the test:</p>
+        <a id="l1" href="l1/l1.html"><button type="button" class="test-type">Static test</button></a>
+        <a id="l2" href="l2/l2.html"><button type="button" class="test-type">Dynamic test</button></a>
+    </main>
+
+    <footer>
+        <p id="copyright">
+            &copy; Emanuele Tocci
         </p>
-    </div>
-    <p>Choose the test</p>
-    <a id="l1" href="l1/l1.html"><button type="button" class="test-type">Static test</button></a>
-    <a id="l2" href="l2/l2.html"><button type="button" class="test-type">Dynamic test</button></a>
+    </footer>
+    <script src="homepage.js"></script> 
 </body>
 </html>
 

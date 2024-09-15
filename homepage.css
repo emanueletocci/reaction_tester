@@ -1,10 +1,12 @@
 @import url("/reaction_tester/base.css");
-
+#clock {
+    font-size: 1.5rem;
+}
 .container {
     background-color: var(--ct);
     text-align: left;
     border-radius: 20px;
-    width: 80%;
+    width: 60%;
     margin: 15px auto;
     padding: 20px;
     display: flex;
@@ -13,4 +15,16 @@
 }
 h2, h3, h4{
     text-align: center;
+}
+
+h3 {
+    padding-top: 30px;
+}
+footer{
+    position: relative;
+}
+
+hr{
+    color: var(--tp);
+    margin: 20px 0 20px 0;
 }
