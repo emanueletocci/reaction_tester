@@ -77,4 +77,7 @@
     display: block;
     bottom: 210px;
     left: 835px;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
