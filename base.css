@@ -75,8 +75,6 @@ a:hover {
 
 strong { color: var(--cyan);}
 
-
-
 button {
   background-color: var(--lilac);
   color: var(--bg);
@@ -90,4 +88,8 @@ button {
 button:hover {
   background-color: var(--cyan);
   transform: scale(1.2);
+}
+
+.hidden{
+  display: none;
 }

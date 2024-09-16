@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', function(){
     let intId = null;
+    let intIdModal = null;
     const container = document.querySelector('.container');
     const ready_text = document.getElementById('ready_text');
     const time = document.getElementById('time');
     const circles = document.querySelectorAll('.circle');
     const reset = document.getElementById('reset');
+    const modal = document.querySelector('.modal');
+    const close_button = document.getElementById('close-button');
     let start_time;
     let counter;
     let clickable;
@@ -12,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function(){
     let sum;
     let results = [];
     reset_func();
+
+    if(intIdModal){
+        clearTimeout(intIdModal);
+    }
+    intIdModal = setTimeout(openModal, 1000);  //open dialog after 1s
+
     container.addEventListener('click', clicked);
     reset.addEventListener('click', reset_func);
     
@@ -98,5 +107,9 @@ document.addEventListener('DOMContentLoaded', function(){
         average = (sum/counter);
         alert("Your average score: "+average+ "ms");
         reset_func();
+    }
+
+    function openModal(){
+        modal.classList.remove("hidden");
     }
 });
