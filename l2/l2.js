@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function(){
         shape.style.display = "none";
         userTime = timeCalc(startTime, Date.now());
         score = score + userTime;
-        document.getElementById('time').innerHTML = userTime.toFixed(2);
-        document.getElementById('score').innerHTML = score.toFixed(1);
+        document.getElementById('time').innerHTML = userTime.toFixed(2) + " ms";
+        document.getElementById('score').innerHTML = score.toFixed(1) + " ms";
         startTime = Date.now();
         makeShapeAppear();
     }

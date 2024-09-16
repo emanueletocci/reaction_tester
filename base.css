@@ -23,6 +23,10 @@
     overflow-wrap: break-word;
   }
 
+  mark {
+    background-color: var(--cyan);
+  }
+
   :root{
     --green: #a6d189;
     --yellow: #e5c890;
