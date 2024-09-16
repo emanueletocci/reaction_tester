@@ -93,3 +93,7 @@ button:hover {
 .hidden{
   display: none;
 }
+
+.blur {
+  filter: blur(1.1px);
+}

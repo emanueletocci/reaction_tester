@@ -65,7 +65,6 @@
     color: var(--tp);
 
     li{text-align: left;}
-    h2{color: var(--lilac);}
 }
 
 #green{
@@ -81,3 +80,4 @@
         transform: scale(1.05);
     }
 }
+

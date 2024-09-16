@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const circles = document.querySelectorAll('.circle');
     const reset = document.getElementById('reset');
     const modal = document.querySelector('.modal');
+    const main = document.getElementById("main-section");
     const close_button = document.getElementById('close-button');
     let start_time;
     let counter;
@@ -19,9 +20,13 @@ document.addEventListener('DOMContentLoaded', function(){
     if(intIdModal){
         clearTimeout(intIdModal);
     }
-    intIdModal = setTimeout( () => modal.classList.remove("hidden"), 2000);  //open dialog after 1s
+    intIdModal = setTimeout( function(){ 
+        modal.classList.remove("hidden");
+    }, 500);  //open dialog after 500ms
 
-    close_button.addEventListener('click', () => modal.classList.add("hidden"), 1000);  //close dialog on click
+    close_button.addEventListener('click', function(){
+        modal.classList.add("hidden");  //close dialog on click
+    });
     container.addEventListener('click', clicked);
     reset.addEventListener('click', reset_func);
 
