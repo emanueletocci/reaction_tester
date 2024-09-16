@@ -19,11 +19,12 @@ document.addEventListener('DOMContentLoaded', function(){
     if(intIdModal){
         clearTimeout(intIdModal);
     }
-    intIdModal = setTimeout(openModal, 1000);  //open dialog after 1s
+    intIdModal = setTimeout( () => modal.classList.remove("hidden"), 2000);  //open dialog after 1s
 
+    close_button.addEventListener('click', () => modal.classList.add("hidden"), 1000);  //close dialog on click
     container.addEventListener('click', clicked);
     reset.addEventListener('click', reset_func);
-    
+
     //Click the shape
     function clicked(){
         if(ready_text.innerHTML === "Click when you are ready"){
@@ -107,9 +108,5 @@ document.addEventListener('DOMContentLoaded', function(){
         average = (sum/counter);
         alert("Your average score: "+average+ "ms");
         reset_func();
-    }
-
-    function openModal(){
-        modal.classList.remove("hidden");
     }
 });
