@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function(){
     let intId = null;
     const start_button = document.getElementById('start_button');
     start_button.addEventListener('click', buttonClicked);
-
     const stop_button = document.getElementById('stop_button');
 
     let startTime = Date.now();
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function timeCalc(t1,t2){
         t2 = t2 || Date.now();              //se manca t2 usa l'ora corrente
-        return (t2-t1)/1000;   //toFixed rappresenta la risoluzione del numero
+        return (t2-t1);   //toFixed rappresenta la risoluzione del numero
     }
 
     function randomPos(){

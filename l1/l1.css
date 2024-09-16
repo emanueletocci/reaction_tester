@@ -51,3 +51,30 @@
     font-size: 1.3em;
     font-weight: bold;
 }
+
+.modal{
+    position: absolute;
+    top: 35vh;
+    background-color: var(--bg);
+    color: var(--tp);
+    width: 35vw;
+    height: 300px;
+    margin: 10px auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+
+    li{text-align: left;}
+    h2{color: var(--lilac);}
+}
+
+
+#green{
+    color: var(--green);
+}
+
+#close-button{
+    position: relative;
+    display: block;
+    bottom: 210px;
+    left: 835px;
+}
