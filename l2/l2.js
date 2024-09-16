@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     function shapeTransform(){
-        const w = minMaxGen(10, 300);
+        const w = minMaxGen(30, 300);
         shape.style.width = w + "px";
         shape.style.height = w + "px";
         shape.style.backgroundColor = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;
