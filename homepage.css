@@ -16,7 +16,7 @@ h3 {
     text-align: left;
     border-radius: 20px;
     width: 60%;
-    margin: 15px auto;
+    margin: 15px auto; 
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -26,9 +26,14 @@ h3 {
 li{
     font-size: 1.15rem;
 }
-footer{
-    position: relative;
+
+@media (min-width: 768px) {
+    footer{
+        position: relative;
+        top: 300px;
+    }
 }
+
 
 hr{
     color: var(--tp);
