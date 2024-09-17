@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const modal = document.querySelector('.modal');
     const main = document.getElementById("main-section");
     const close_button = document.getElementById('close-button');
+    const modalct = document.getElementById('modal-ct');
+
     let start_time;
     let counter;
     let clickable;
@@ -26,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     close_button.addEventListener('click', function(){
         modal.classList.add("hidden");  //close dialog on click
+        modalct.style.zIndex="-1";
     });
     container.addEventListener('click', clicked);
     reset.addEventListener('click', reset_func);

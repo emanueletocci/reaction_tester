@@ -61,6 +61,7 @@
     border-radius: 20px;
     color: var(--tp);
     padding: 15px 40px 40px 40px;
+
     li{text-align: left;}
 }
 
@@ -70,7 +71,7 @@
     }
 }
 
-.modal-ct{
+#modal-ct{
     position: absolute;
     width: 100vw;
     height: 100vh;
