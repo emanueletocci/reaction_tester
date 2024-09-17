@@ -11,6 +11,10 @@ h3 {
     padding-top: 30px;
 }
 
+hr{
+    color: var(--tp);
+    margin: 20px 0 20px 0;
+}
 .container {
     background-color: var(--ct);
     text-align: left;
@@ -27,15 +31,3 @@ li{
     font-size: 1.15rem;
 }
 
-@media (min-width: 768px) {
-    footer{
-        position: relative;
-        top: 300px;
-    }
-}
-
-
-hr{
-    color: var(--tp);
-    margin: 20px 0 20px 0;
-}
