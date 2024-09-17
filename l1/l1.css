@@ -54,21 +54,19 @@
 }
 
 .modal{
-    width: 900px;
-    height:250px;
+    width: 70vw;
     position: relative;
     border: 3px solid var(--tp);
     background-color: var(--bg);
     border-radius: 20px;
     color: var(--tp);
-
+    padding: 15px 40px 40px 40px;
     li{text-align: left;}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .modal{
         width: 90vw;
-        height: 60vh;
     }
 }
 
