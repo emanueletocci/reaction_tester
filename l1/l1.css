@@ -54,7 +54,6 @@
 }
 
 .modal{
-    width: 70vw;
     position: relative;
     border: 3px solid var(--tp);
     background-color: var(--bg);

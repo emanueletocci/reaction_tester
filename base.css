@@ -45,6 +45,7 @@ body{
     font-family: 'Anonymous Pro', sans-serif;
     color: var(--tp);
     text-align: center;
+    overflow: hidden; /* Hide scrollbars */
 }
 
 p { 
