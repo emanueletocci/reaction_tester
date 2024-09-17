@@ -110,6 +110,9 @@ document.addEventListener('DOMContentLoaded', function(){
         for (let i=0; i<5; i++){
             circles[i].style.backgroundColor = "#181825";    
         }
+        container.style.backgroundColor = "#181825";
+        ready_text.style.color = "#cdd6f4";
+
     }
 
     function showRes(){
