@@ -6,8 +6,11 @@
 
   * {
     margin: 0;
+
   }
-  body {
+  body, html {
+    height: 100%;
+    margin: 0;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
@@ -96,4 +99,8 @@ button:hover {
 
 .blur {
   filter: blur(1.1px);
+}
+
+#green{
+  color: var(--green);
 }
