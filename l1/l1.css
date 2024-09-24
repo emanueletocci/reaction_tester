@@ -32,7 +32,12 @@
         animation: colorFadeIn 0.5s;        
     }
 }
-
+@media (min-width: 768px) {
+  .container{
+    width: 80%;
+    height: 50vh;
+  }
+}
 .attempt {
     display: flex;
     align-items: center;

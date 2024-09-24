@@ -4,10 +4,8 @@
     box-sizing: border-box;
   }
 
-  * {
-    margin: 0;
-
-  }
+  * {margin: 0;}
+  
   body, html {
     height: 100%;
     margin: 0;
@@ -45,7 +43,6 @@ body{
     font-family: 'Anonymous Pro', sans-serif;
     color: var(--tp);
     text-align: center;
-    overflow: hidden; /* Hide scrollbars */
 }
 
 p { 
