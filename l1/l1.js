@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const modal = document.querySelector('.modal');
     const main = document.getElementById("main-section");
     const close_button = document.getElementById('close-button');
-    const modalct = document.getElementById('modal-ct');
+    const modalct = document.getElementById('modal-ct'); 
 
     let start_time;
     let counter;
@@ -23,12 +23,15 @@ document.addEventListener('DOMContentLoaded', function(){
         clearTimeout(intIdModal);
     }
     intIdModal = setTimeout( function(){ 
-        modal.classList.remove("hidden");
+        modalct.classList.remove("hidden");
+        modalct.classList.add("bg-blur");
     }, 500);  //open dialog after 500ms
 
     close_button.addEventListener('click', function(){
         modal.classList.add("hidden");  //close dialog on click
         modalct.style.zIndex="-1";
+        modalct.classList.remove("bg-blur");
+
     });
     container.addEventListener('click', clicked);
     reset.addEventListener('click', reset_func);
