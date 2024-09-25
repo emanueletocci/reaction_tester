@@ -2,9 +2,9 @@
 
 #shape_box{
     padding: 50px 50px 50px 50px;
-    margin: 50px auto 50px auto;
-    width: 80%;
-    height: 60vh;
+    margin: 50px auto 0 auto;
+    width: 90%;
+    height: 58vh;
     border-radius: 50px;
 }
 
@@ -29,3 +29,41 @@
 
 #stop_button{display: none;}
 b { color: var(--cyan);}
+
+.modal{
+    position: relative;
+    border: 3px solid var(--tp);
+    background-color: var(--bg);
+    border-radius: 20px;
+    color: var(--tp);
+    padding: 15px 40px 40px 40px;
+}
+
+li {text-align: left;}
+
+@media (max-width: 768px) {
+    .modal{
+        width: 90vw;
+    }
+}
+
+#modal-ct{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 500ms;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;    
+    
+    &:hover{
+        transform: scale(1.05);
+    }
+}

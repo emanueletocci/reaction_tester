@@ -28,17 +28,17 @@ document.addEventListener('DOMContentLoaded', function(){
         shape.style.display = "none";
         userTime = 0;
         score = 0;
-        document.getElementById('time').innerHTML = userTime.toFixed(2);
-        document.getElementById('score').innerHTML = score.toFixed(1);
+        document.getElementById('time').innerHTML = userTime;
+        document.getElementById('score').innerHTML = score;
         stop_button.style.display = "none";
         start_button.style.display = "inline-block";
     }
     function shapeClicked(){
         shape.style.display = "none";
-        userTime = timeCalc(startTime, Date.now());
+        userTime = timeCalc(startTime);
         score = score + userTime;
-        document.getElementById('time').innerHTML = userTime.toFixed(2) + " ms";
-        document.getElementById('score').innerHTML = score.toFixed(1) + " ms";
+        document.getElementById('time').innerHTML = userTime + " ms";
+        document.getElementById('score').innerHTML = score + " ms";
         startTime = Date.now();
         makeShapeAppear();
     }
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     function shapeTransform(){
-        const w = minMaxGen(30, 300);
+        const w = minMaxGen(30, 150);
         shape.style.width = w + "px";
         shape.style.height = w + "px";
         shape.style.backgroundColor = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;

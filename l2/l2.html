@@ -7,20 +7,37 @@
     <link rel="stylesheet" type="text/css" href="l2.css">  
 </head>
 <body>
-    <h1>Test your reaction!</h1>
-    <h2>Dynamic test</h2>
-    <div id="back-button">
-        <a href="/reaction_tester/index.html">
-            <img width="50" height="50" src="https://img.icons8.com/ios/50/cba6f7/circled-left-2.png" alt="circled-left-2"/>    
-        </a>
+    <div id="modal-ct" class="hidden">
+        <div class="modal">
+            <h2>How to</h2>    
+            <ol>
+                <li>Click everywhere on the <b>dark box</b> when you are ready;</li>
+                <li>Wait the <b><span id="green">green</span></b>;</li>
+                <li>Click when the color changes (when you do a correct attempt, a dark dot turn green at the bottom);</li>
+                <li>Repeat this 5 times (you have to collect 5 green dots);</li>
+                <li>You can use the <b>reset</b> button to reset the attempt and start the test again;</li>
+                <li>At the end, an <b>average time</b> and each attempts timings appear on the screen.</li>
+            </ol>        
+            <img id="close-button" width="32" height="32" src="https://img.icons8.com/windows/32/cdd6f4/macos-close.png" alt="macos-close"/>
+        </div>
     </div>
-    <p>Click on <strong id="start-text">start</strong> to begin:</p>
-    <button type="button" id="start_button">START</button>
-    <button type="button" id="stop_button">STOP</button>
-    <p>Your time: <b id="time"> 0 ms </b> Your score: <b id="score"> 0 ms</b></p>
-    <div id="shape_box">    
-        <div id="shape"></div>
-    </div>
+
+    <main id="main-section">
+        <h1>Test your reaction!</h1>
+        <h2>Dynamic test</h2>
+        <div id="back-button">
+            <a href="/reaction_tester/index.html">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/cba6f7/circled-left-2.png" alt="circled-left-2"/>    
+            </a>
+        </div>
+        <p>Click on <strong id="start-text">start</strong> to begin:</p>
+        <button type="button" id="start_button">START</button>
+        <button type="button" id="stop_button">STOP</button>
+        <p>Your time: <b id="time"> 0 ms </b> Your score: <b id="score"> 0 ms</b></p>
+        <div id="shape_box">    
+            <div id="shape"></div>
+        </div>
+    </main>
     <script src="l2.js"></script> 
 </body>
 </html>
