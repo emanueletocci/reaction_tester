@@ -92,14 +92,15 @@ button:hover {
   transform: scale(1.2);
 }
 
-.hidden{
-  visibility: hidden;  
-}
+.hidden{visibility: hidden;}
 
-.bg-blur {
-  background: rgba(0, 0, 0, 0.8);
-}
+.bg-blur {background: rgba(0, 0, 0, 0.8);}
 
-#green{
-  color: var(--green);
-}
+.green{color: var(--green);}
+
+.liliac{color: var(--lilac);}
+
+.tcenter{text-align: center;}
+
+.tleft{text-align: left;}
+

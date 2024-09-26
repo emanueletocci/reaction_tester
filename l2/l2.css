@@ -19,7 +19,6 @@
 #shape{
     width: 200px;
     height: 200px;
-    background-color: red;
     display: none;
     position: relative;
     top:0;
@@ -28,6 +27,7 @@
 }
 
 #stop_button{display: none;}
+
 b { color: var(--cyan);}
 
 .modal{
@@ -39,7 +39,6 @@ b { color: var(--cyan);}
     padding: 15px 40px 40px 40px;
 }
 
-li {text-align: left;}
 
 @media (max-width: 768px) {
     .modal{

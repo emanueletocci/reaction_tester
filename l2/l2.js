@@ -1,19 +1,37 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-    let intId = null;
-    const start_button = document.getElementById('start_button');
-    start_button.addEventListener('click', buttonClicked);
-    const stop_button = document.getElementById('stop_button');
-
-    let startTime = Date.now();
+    let startTime;
     let userTime = 0;
+    let intId = null;
+    let score = 0;
+    let intIdModal = null;
 
+    const start_button = document.getElementById('start_button');
+    const stop_button = document.getElementById('stop_button');
+    const modal = document.querySelector('.modal');
+    const close_button = document.getElementById('close-button');
+    const modalct = document.getElementById('modal-ct'); 
     const shape = document.getElementById('shape');
+
+    start_button.addEventListener('click', buttonClicked);
     shape.addEventListener('click', shapeClicked);
     stop_button.addEventListener('click', stop);
 
-    let score = 0;
+    if(intIdModal){
+        clearTimeout(intIdModal);
+    }
+    intIdModal = setTimeout( function(){ 
+        modalct.classList.remove("hidden");
+        modalct.classList.add("bg-blur");
+    }, 500);  //open dialog after 500ms
 
+    close_button.addEventListener('click', function(){
+        modal.classList.add("hidden");  //close dialog on click
+        modalct.style.zIndex="-1";
+        modalct.classList.remove("bg-blur");
+
+    });
+    
     function buttonClicked(){
         document.getElementById('start-text').innerHTML = "stop";
 
@@ -49,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     function randomPos(){
+        startTime=Date.now();
         shape.style.display = "block";
         shape.style.position = "relative";
         shape.style.top = Math.random()*80 + "%";

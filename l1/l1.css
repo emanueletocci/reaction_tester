@@ -68,10 +68,6 @@
     padding: 15px 40px 40px 40px;
 }
 
-li {
-    text-align: left;
-}
-
 @media (max-width: 768px) {
     .modal{
         width: 90vw;
@@ -99,3 +95,4 @@ li {
     }
 }
 
+b { color: var(--cyan);}

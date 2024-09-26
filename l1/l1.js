@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function(){
     const circles = document.querySelectorAll('.circle');
     const reset = document.getElementById('reset');
     const modal = document.querySelector('.modal');
-    const main = document.getElementById("main-section");
     const close_button = document.getElementById('close-button');
     const modalct = document.getElementById('modal-ct'); 
 
